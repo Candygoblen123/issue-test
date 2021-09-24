@@ -56,8 +56,9 @@ body:
       multiple: true
       options:
         - Firefox
-        - Chromeium (Chrome, Opera, Brave, pretty much anything besides Firefox)
+        - Chrome
         - Microsoft Edge
+        - Other (Put it in the "Anything else?" section)
   - type: textarea
     attributes:
       label: Anything else?
