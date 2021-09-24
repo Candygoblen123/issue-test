@@ -51,8 +51,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    attributes: 
-      attributes:
+    attributes:
       label: What browsers are you seeing the problem on? (You're on the latest version, right?)
       multiple: true
       options:
