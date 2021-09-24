@@ -1,62 +1,25 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
-    id: terms
+    id: checklist
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Checklist
+      description: These are some simple guidelines for creating a bug report, make sure your bug report follows all of these guidelines before submitting
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: This is an issue for LiveTL, not Hyperchat. I will go to [the Hyperchat repo](https://github.com/LiveTL/HyperChat) to report an issue with Hyperchat.
+          required: true
+        - label: This is an issue for the LiveTL web extension, not LiveTL iOS or LiveTL Android. I will go to the [iOS](https://github.com/LiveTL/ios) or [Android](https://github.com/LiveTL/android) repo to report issues for those platforms.
+          required: true
+        - label: This issue is not a matter of opinion (For example: "A feature obviously works as intended, but *I think* it should work differently.") If it is, I will use the feature suggestion issue template.
+          required: true
+        - label: I have checked for a duplicate or similar issue. I made sure to check closed issues as well. 
+          required: true
+        - label: I am still able to reproduce the issue after I reinstall the extension.
+          required: true
+        - label: I have clear instructions to reproduce the bug, even on another machine.
+          required: true
+        - label: I am not suggesting a feature. If I am, I will use the feature suggestion issue template.
           required: true
