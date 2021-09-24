@@ -59,6 +59,8 @@ body:
         - Chrome
         - Microsoft Edge
         - Other (Put it in the "Anything else?" section)
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Anything else?
