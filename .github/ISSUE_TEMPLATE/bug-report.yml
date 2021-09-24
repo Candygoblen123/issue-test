@@ -13,7 +13,7 @@ body:
           required: true
         - label: This is an issue for the LiveTL web extension, not LiveTL iOS or LiveTL Android. I will go to the [iOS](https://github.com/LiveTL/ios) or [Android](https://github.com/LiveTL/android) repo to report issues for those platforms.
           required: true
-        - label: This issue is not a matter of opinion (For example: "A feature obviously works as intended, but *I think* it should work differently.") If it is, I will use the feature suggestion issue template.
+        - label: This issue is not a matter of opinion. If it is, I will use the feature suggestion issue template.
           required: true
         - label: I have checked for a duplicate or similar issue. I made sure to check closed issues as well. 
           required: true
