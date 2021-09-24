@@ -35,8 +35,11 @@ body:
       description: Step-by-step instructions to reproduce the unexpected behavior
       placeholder: |
         1. Go to '...'
+        
         2. Click on '...'
+        
         3. Scroll down to '...'
+        
         4. The error looks like '...'
     validations:
       required: true
