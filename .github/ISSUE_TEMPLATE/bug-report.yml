@@ -52,7 +52,8 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: What browsers are you seeing the problem on? (You're on the latest version, right?)
+      label: What browsers are you seeing the problem on?
+      description: You're on the latest version, right? (You can select multiple, so test on as many browsers as you want!)
       multiple: true
       options:
         - Firefox
