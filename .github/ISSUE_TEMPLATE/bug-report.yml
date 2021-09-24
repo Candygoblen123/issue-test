@@ -4,7 +4,6 @@ title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: checkboxes
-    id: checklist
     attributes:
       label: Checklist
       description: These are some simple guidelines for creating a bug report, make sure your bug report follows all of these guidelines before submitting
@@ -23,3 +22,28 @@ body:
           required: true
         - label: I am not suggesting a feature. If I am, I will use the feature suggestion issue template.
           required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. 
+      placeholder: What's wrong?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Step-by-step instructions to reproduce the unexpected behavior:
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. The error looks like '...'
+    validations:
+      required: true
+  - type: textarea
+      attributes:
+        label: Expected behavior
+        description: A clear and concise description of what you expected to happen.
+        placeholder: What's supposed to happen?
+      validations:
+        required: true
